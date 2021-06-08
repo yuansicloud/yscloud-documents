@@ -1,29 +1,17 @@
+const pluginConf = require('./config/pluginConf.js');
+const navConf = require('./config/navConf.js');
+const headConf = require('./config/headConf.js');
 module.exports = {
-  theme: "antdocs",
-  title: "元思云文档中心",
-  description: "一个行业领先的馆园一体化服务提供商",
-  base: "/",
-  head: [
-    ["link", { rel: "icon", href: "/assets/logo.png" }]
-  ],
-  plugins: [
-    [
-      '@vuepress/google-analytics',
-      {
-        'ga': 'UA-175694260-1'
-      }
-    ]
-  ],
-  markdown: {
-    lineNumbers: false,
-  },
+  title: '元思·云',
+  description: '元思·云文档中心',
+  head: headConf,
+  plugins: pluginConf,
   themeConfig: {
-    smoothScroll: true,
-    nav: require("./config/nav"),
-    sidebar: require("./config/sidebar"),
-    lastUpdated: "Last Updated",
-    repo: "yuansicloud",
-    logo: "/assets/logo.png",
-    editLinks: false,
+    lastUpdated: '上次更新',
+    repo: 'yuansicloud',
+    editLinks: true,
+    editLinkText: '编辑文档！',
+    docsDir: 'docs',
+    nav: navConf
   },
-};
+}

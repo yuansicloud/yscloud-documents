@@ -1,18 +1,31 @@
 {
-  "name": "easyabp.io",
-  "version": "1.1.0",
-  "main": "index.js",
+  "name": "documents",
+  "version": "1.0.0",
+  "description": "shanyuhai123's docs web",
+  "private": true,
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "docs:dev": "vuepress dev docs --temp .temp",
+    "docs:build": "vuepress build docs"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shanyuhai123/documents.git"
+  },
+  "author": "shanyuhai123",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shanyuhai123/documents/issues"
+  },
+  "homepage": "https://github.com/shanyuhai123/documents#readme",
   "devDependencies": {
-    "@vuepress/plugin-google-analytics": "^1.5.3",
-    "vuepress": "^1.3.1"
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-google-analytics": "^1.8.2",
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
+    "@vuepress/plugin-pwa": "^1.8.2",
+    "moment": "^2.29.1",
+    "vuepress": "^1.8.2"
   },
-  "creator": ">=2.0.0",
   "dependencies": {
-    "core-js": "2",
-    "vuepress-theme-antdocs": "^1.1.1"
+    "vuepress-plugin-auto-sidebar": "^2.2.3"
   }
 }
