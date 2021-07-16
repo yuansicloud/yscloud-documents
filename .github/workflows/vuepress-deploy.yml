@@ -19,21 +19,13 @@ jobs:
           npm install
           npm run docs:build
 
-      - name: Deploy Github 🚀
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.PAGES_TOKEN }}
-          publish_dir: docs/.vuepress/dist
-          cname: docs.shanyuhai.top
-          commit_message: ${{ github.event.head_commit.message }}
-
       - name: Deploy Server 🚀
         uses: burnett01/rsync-deployments@4.1
         with:
           switches: -avzr --delete
-          path: docs/.vuepress/dist/
-          remote_path: ${{ secrets.SERVER_TARGET }}
-          remote_host: ${{ secrets.SERVER_IP }}
-          remote_port: ${{ secrets.SERVER_PORT }}
-          remote_user: ${{ secrets.SSH_USERNAME }}
-          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          path: /www/docs/
+          remote_path: ${{ secrets.LIGHTHOUSE_SERVER_TARGET }}
+          remote_host: ${{ secrets.LIGHTHOUSE_SERVER_IP }}
+          remote_port: ${{ secrets.LIGHTHOUSE_SERVER_PORT }}
+          remote_user: ${{ secrets.LIGHTHOUSE_SSH_USERNAME }}
+          remote_key: ${{ secrets.LIGHTHOUSE_SSH_PRIVATE_KEY }}

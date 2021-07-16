@@ -8,7 +8,7 @@ module.exports = {
   plugins: pluginConf,
   themeConfig: {
     lastUpdated: '上次更新',
-    repo: 'yuansicloud',
+    repo: 'yuansicloud/yscloud-documents',
     editLinks: true,
     editLinkText: '编辑文档！',
     docsDir: 'docs',

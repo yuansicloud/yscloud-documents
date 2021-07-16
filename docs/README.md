@@ -4,7 +4,7 @@ heroImage: /app.png
 heroText: 元思文档中心
 tagline: 文档, 帮助
 actionText: 进入文档中心 →
-actionLink: /guide/
+actionLink: /products/yscloud-furneral-web/
 ---
 
 ## 关于~~文档~~笔记
@@ -15,10 +15,6 @@ actionLink: /guide/
 
 :::
 
-<!-- 这个 VuePress 文档本应该在一个多月以前就搭建出来, 结果硬生生地拖过了年, 不过早期是准备以文档的形式来介绍, 现在是录制成了视频： -->
-
-
-<!-- :tada: [视频地址](https://www.bilibili.com/video/av43316513/) :tada: -->
 
 
 <p style="text-align:center;">MIT Licensed | Copyright © 2018-2020 元思云 | ICP证：<a href="http://www.beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">皖ICP备19002167号</a></p>

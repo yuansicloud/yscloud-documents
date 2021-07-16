@@ -27,13 +27,15 @@ module.exports = {
     title: {
       mode: "uppercase",
       map: {
-        "/frontend/javascript/": "JS 基础",
-        "/products/yscloud-furneral-web/": "元思·殡PC后台管理系统",
+        "/products/yscloud-furneral-mobile/": "元思PC移动办公小程序",
+        "/products/yscloud-furneral-web/": "元思PC后台管理系统",
+        "/products/yscloud-furneral-pad/": "元思PAD智慧平板",
       },
     },
     collapse: {
       collapseList: [
-        "/frontend/javascript/",
+        "/products/yscloud-furneral-pad/",
+        "/products/yscloud-furneral-mobile/",
         "/products/yscloud-furneral-web/",
       ],
     },
