@@ -27,5 +27,5 @@ jobs:
           remote_path: /www/docs/
           remote_host: 81.69.243.195
           remote_port: 22
-          remote_user: www
+          remote_user: root
           remote_key: ${{ secrets.LIGHTHOUSE_SSH_PRIVATE_KEY }}
