@@ -23,9 +23,9 @@ jobs:
         uses: burnett01/rsync-deployments@4.1
         with:
           switches: -avzr --delete
-          path: /www/docs/
-          remote_path: ${{ secrets.LIGHTHOUSE_SERVER_TARGET }}
-          remote_host: ${{ secrets.LIGHTHOUSE_SERVER_IP }}
-          remote_port: ${{ secrets.LIGHTHOUSE_SERVER_PORT }}
-          remote_user: ${{ secrets.LIGHTHOUSE_SSH_USERNAME }}
+          path: www/docs/
+          remote_path: /home/www/docs/
+          remote_host: http://81.69.243.195/
+          remote_port: 22
+          remote_user: root
           remote_key: ${{ secrets.LIGHTHOUSE_SSH_PRIVATE_KEY }}
